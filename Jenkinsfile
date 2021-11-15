@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo '----------------- This is a build docker image phase ----------'
                 sh '''
-                    docker image build -t ecom-webservice .
+                    docker image build -t phase3-ecom-sportyshoes-dummy .
                 '''
             }
         }
@@ -43,13 +43,13 @@ pipeline {
             steps {
                 echo '----------------- This is a docker deploment phase ----------'
                 sh '''
-                 (if  [ $(docker ps -a | grep ecom-webservice | cut -d " " -f1) ]; then \
-                        echo $(docker rm -f ecom-webservice); \
-                        echo "---------------- successfully removed ecom-webservice ----------------"
+                 (if  [ $(docker ps -a | grep phase3-ecom-sportyshoes-dummy | cut -d " " -f1) ]; then \
+                        echo $(docker rm -f phase3-ecom-sportyshoes-dummy); \
+                        echo "---------------- successfully removed phase3-ecom-sportyshoes-dummy ----------------"
                      else \
                     echo OK; \
                  fi;);
-            docker container run --restart always --name ecom-webservice -p 8081:8081 -d ecom-webservice
+            docker container run --restart always --name phase3-ecom-sportyshoes-dummy -p 8081:8081 -d phase3-ecom-sportyshoes-dummy
             '''
             }
         }
