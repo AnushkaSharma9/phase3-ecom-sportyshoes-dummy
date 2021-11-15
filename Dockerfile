@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk
-COPY ./target/ecom-webservice-0.0.1-SNAPSHOT.jar ecom-webservice-0.0.1-SNAPSHOT.jar
+COPY ./target/phase3-ecom-sportyshoes-dummy-0.0.1-SNAPSHOT.jar phase3-ecom-sportyshoes-dummy-0.0.1-SNAPSHOT.jar
 CMD ["java" ,"-jar","phase3-ecom-sportyshoes-dummy-0.0.1-SNAPSHOT.jar"]
 RUN echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
