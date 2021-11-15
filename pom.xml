@@ -11,7 +11,7 @@
 	<groupId>com.anushka.sportyshoes_ecommerce</groupId>
 	<artifactId>phase3-ecom-sportyshoes-dummy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>phase3-spring-ecom-webservice-part5</name>
+	<name>phase3-ecom-sportyshoes-dummy</name>
 	<description>Ecom Webservice project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
