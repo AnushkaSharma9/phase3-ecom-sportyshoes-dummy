@@ -49,7 +49,7 @@ pipeline {
                      else \
                     echo OK; \
                  fi;);
-            docker container run --restart always --name phase3-ecom-sportyshoes-dummy -p 8080:8081 -d phase3-ecom-sportyshoes-dummy
+            docker container run --restart always --name phase3-ecom-sportyshoes-dummy -p 8081:8081 -d phase3-ecom-sportyshoes-dummy
             '''
             }
         }
